@@ -1,0 +1,96 @@
+#loans-browser {
+  text-align: center;
+  padding: 0 60px 60px 60px;
+
+  .header {
+    text-align: left;
+  }
+
+  .content {
+    margin-top: 30px;
+		.v-tab {
+			text-transform: none;
+		}
+		.v-item-group {
+			overflow: visible;
+		}
+		.my-loan-container {
+			display: flex;
+			margin-top: 15px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			border-radius: var(--card-border-radius);
+		}
+		.action {
+			width: 50%;
+			.btn-action {
+				margin-top: 20px;
+			}
+		}
+		.details {
+			width: 50%;
+			margin-left: 20px;
+		}
+  }
+	.btn-reload {
+		float: right;
+	}
+}
+
+#loans-mobile {
+	color: white;
+	width: 100vw;
+	height: 100vh;
+	.header {
+		background-color: #0C365A;
+		min-height: 50vh;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		.header-current-loan {
+			display: flex;
+			width: 100%;
+			.total-loan {
+				flex: 9;
+			}
+			.logo {
+				flex: 1;
+				float: right;
+				display: flex;
+				justify-content: right;
+			}
+		}
+		.header-loan-tab {
+			flex: 10;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			.v-tab {
+				text-transform: none;
+				color: white;
+				opacity: 0.5;
+			}
+			.tab-active {
+				opacity: 1;
+				font-weight: bold;
+			}
+			.v-item-group {
+				background-color: transparent;
+				height: 30vh !important;
+				overflow: auto;
+			}
+		}
+	}
+
+  .content {
+		height: 50vh;
+		.detail-container {
+			overflow: auto;
+			max-height: 25vh;
+		}
+		border-radius: var(--card-border-radius) !important;
+  }
+	.btn-reload {
+		right: 5px;
+		bottom: 10%;
+	}
+}

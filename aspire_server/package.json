@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "lodash.random": "^3.2.0",
+    "@koa/cors": "^3.1.0",
+    "koa-bodyparser": "^4.3.0"
+  },
+  "proxy": "http://localhost:4000"
+}
